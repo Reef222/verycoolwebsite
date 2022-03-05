@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}Create book{% endblock %} {% block content
+%}
+
+<h1 align="center">צור ספר</h1>
+
+<form method="POST">
+  <textarea name="text" id="text" class="form-control"></textarea>
+  <br>
+  <input type="checkbox" name="match" value="matchwithpairs" checked>
+  <br>
+  <h4>האם זה בלוקר</h4>
+  <br>
+  <div align="center">
+    <button type="submit" class="btn btn-lg btn-primary">הכנס את שם הספר למערכת</button>
+  </div>
+</form>
+<br />
+<div align="center">
+  <a href="/books"
+    ><button type="button" class="btn btn-lg btn-secondary">חזור</button></a
+  >
+</div>
+{% endblock %}

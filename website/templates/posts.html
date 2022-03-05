@@ -1,0 +1,20 @@
+{% extends "posts_div.html" %} {% block title %}{{username}} הספרים של{% endblock
+%} {% block header %} {{username}} הספרים של{% endblock %} {% block footer %}
+<div align="center">
+  <a href="/home"
+    ><button type="button" class="btn btn-primary btn-lg">Back</button></a
+  >
+</div>
+<br>
+
+<div align="center">
+    <a href="/HOMEbooks"
+    ><button type="button" class="btn btn-primary btn-lg">ללכת הביתה</button></a
+  >
+    <br>
+        <br>
+  <a href="/create-book"
+    ><button type="button" class="btn btn-primary btn-lg">Create Book/Notebook</button></a
+  >
+</div>
+{% endblock %}
